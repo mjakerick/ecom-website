@@ -9,3 +9,16 @@ const generateToken = (key) => {
     }
     return token;
 }
+
+const compareToken = (token, key) => {
+    let string = '';
+    for(let i = 0; i < token.length; i=i+2){
+        let index1 = char.indexOf(token[i]);
+        let index2 = char.indexOf(token[i+1]);
+        string += char[index1 + index2];
+    }
+    if(string === key){
+        return true;
+    }
+    return false;
+}
