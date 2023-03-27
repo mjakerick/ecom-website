@@ -1,0 +1,49 @@
+# ecommerce-website
+Generic small business Ecommerce Website to sell products online
+## MVP
+- User-friendly interface
+- Visually and functionally professional website
+  - responsive
+  - ability to add/remove items to/from cart
+- nav bar
+- footer
+
+## Stretch Goals
+- User reviews
+- A11Y
+- Think about site and db security
+- Optimization
+- Admin panel
+  - Allow admins to edit products and prices
+
+## Completed
+- home page structure
+  - navbar (dynamic across pages)
+  - footer (dynamic across pages)
+  - product cards with functional slider
+  - collections section structure
+
+- product page structure
+- 404 page structure
+- search page structure
+
+## To Be Completed
+- home pages
+  - navbar functionality including search function
+  - product cards should lead to product pages
+  - collections should go to products in certain categories
+  - footer needs functional links
+
+- product page
+  - functional buttons (add to cart, add to wishlist)
+  - better/more responsive css
+
+- products should be in db
+
+- user reviews
+
+- a11y
+
+- responsive design
+
+- admin panel

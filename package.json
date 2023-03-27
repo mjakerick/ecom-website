@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express.js": "^1.0.0",
+    "firebase-admin": "^11.5.0",
+    "nodemon": "^2.0.22"
+  }
+}
