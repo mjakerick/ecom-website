@@ -45,7 +45,7 @@ window.onload = () => {
   let user = JSON.parse(sessionStorage.user || null);
   if(user != null){
     // if user is logged in
-    popupText.innerHTML = `log in as, ${user.name}`;
+    popupText.innerHTML = `logged in as, ${user.name}`;
     actionBtn.innerHTML = 'log out';
     actionBtn.addEventListener('click', () => {
       sessionStorage.clear();
