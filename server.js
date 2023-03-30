@@ -109,6 +109,30 @@ app.post('/login', (req, res) => {
     })
 })
 
+// seller route
+app.get('/seller', (req, res) => {
+    res.sendFile(path.join(staticPath, "seller.html"));
+})
+
+app.post('/seller', (req, res) => {
+    let { name, about, address, number, tac, legit, email } = req.body;
+    if(!name.length || !about.length || !address.length || number.length < 10 || !Number(number)){
+        return res.json({'alert': 'some information is invalid'});
+    } else if(!tac || !legit){
+        return res.json({'alert': 'you must agree to our terms and conditions'})
+    } else {
+        // update user's seller status here
+        db.collection('sellers').doc(email).set(req.body)
+        .then(data => {
+            db.collection('users').doc(email).update({
+                seller: true
+            }).then(data => {
+                res.json(true);
+            })
+        })
+    }
+})
+
 // 404 route
 app.get('/404', (req, res) => {
     res.sendFile(path.join(staticPath, "404.html"));
