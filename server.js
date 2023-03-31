@@ -133,6 +133,11 @@ app.post('/seller', (req, res) => {
     }
 })
 
+// add product route
+app.get('/add-product', (req, res) => {
+    res.sendFile(path.join(staticPath, "addProduct.html"));
+})
+
 // 404 route
 app.get('/404', (req, res) => {
     res.sendFile(path.join(staticPath, "404.html"));
