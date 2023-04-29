@@ -1,7 +1,7 @@
 body{
     width: 100%;
     display: block;
-    min-height: auto;
+    min-height: 90vh;
     padding: 0 5vw;
     position: relative;
     font-family: roboto, sans-serif;
@@ -89,4 +89,8 @@ body{
 .no-product-image{
     display: block;
     margin: auto;
+}
+
+.hide{
+  display: none;
 }

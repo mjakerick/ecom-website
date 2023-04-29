@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Dashboard</title>
 
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/seller.css">
+
 </head>
 
 <body>
@@ -52,7 +55,23 @@
             <p class="add-product-title">add product</p>
             <button class="btn" onclick="location.href = '/add-product'">add product</button>
         </div>
-        <img src="img/no-products.png" alt="" class="no-product-image">
+        <img src="img/no-products.png" alt="" class="no-product-image hide">
+
+        <!-- cards -->
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="img/card1.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-des">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+        </div>
     </div>
 
     <script src="js/token.js"></script>
