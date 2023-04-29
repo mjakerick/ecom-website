@@ -26,8 +26,8 @@ const accessKeyId = process.env.AWS_ACCESS_KEY;
 const secretAccessKey = process.env.AWS_SECRET_KEY;
 
 aws.config.update({
-    region, 
-    accessKeyId, 
+    region,
+    accessKeyId,
     secretAccessKey
 })
 
@@ -88,7 +88,7 @@ app.post('/signup', (req, res) => {
         return res.json({'alert': 'invalid number, please enter valid one'});
     } else if(!tac){
         return res.json({'alert': 'you must agree to our terms and conditions'});
-    } 
+    }
 
     // store user in db
     db.collection('users').doc(email).get()
@@ -205,7 +205,7 @@ app.post('/add-product', (req, res) => {
             return res.json({'alert': 'enter few tags to help ranking your product in search'});
         } else if(!tac){
             return res.json({'alert': 'you must agree to our terms and conditions'});
-        } 
+        }
     //}
 
     // add product
