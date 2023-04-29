@@ -109,6 +109,11 @@ body{
   color: #383838;
 }
 
+.product-card:hover .card-action-btn{
+  opacity: 1;
+  pointer-events: all;
+}
+
 .card-action-btn{
   position: absolute;
   top: 10px;
@@ -122,6 +127,7 @@ body{
   background: #fff;
   overflow: hidden;
   cursor: pointer;
+  opacity: 0;
 }
 
 .card-action-btn img{
