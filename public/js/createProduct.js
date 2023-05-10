@@ -4,7 +4,7 @@ const createProduct = (data) => {
   <div class="product-card">
     <div class="product-image">
       ${data.draft ? `<span class="tag">Draft</span>` : ''}
-      <img src="${data.images[0]}" class="product-thumb" alt="">
+      <img src="${data.images[0] || 'img/no image.png'}" class="product-thumb" alt="">
       <button class="card-action-btn edit-btn"><img src="img/edit.png"></button>
       <button class="card-action-btn open-btn" onclick="location.href = '/${data.id}'"><img src="img/open.png" alt=""></button>
       <button class="card-action-btn delete-popup-btn" onclick="openDeletePopup('${data.id}')"><img src="img/delete.png" alt=""></button>

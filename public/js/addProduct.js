@@ -109,7 +109,7 @@ const validateForm = () => {
         return showAlert('enter few tags to help ranking your product in search');
     } else if(!tac.checked){
         return showAlert('you must agree to our terms and conditions');
-    } 
+    }
     return true;
 }
 
@@ -138,4 +138,18 @@ addProductBtn.addEventListener('click', () => {
         let data = productData();
         sendData('/add-product', data);
     }
+})
+
+// save draft btn
+saveDraft.addEventListener('click', () => {
+  // store sizes
+  storeSizes();
+  // check for product name
+  if(!productName.value.length){
+    showAlert('enter product name');
+  } else { // don't vaildate the data
+    let data = productData();
+    data.draft = true;
+    sendData('/add-product', data);
+  }
 })

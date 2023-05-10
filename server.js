@@ -183,10 +183,10 @@ app.get('/s3url', (req, res) => {
 
 // add product
 app.post('/add-product', (req, res) => {
-    let { name, shortDes, des, images, sizes, actualPrice, discount, sellPrice, stock, tags, tac, email } = req.body;
+    let { name, shortDes, des, images, sizes, actualPrice, discount, sellPrice, stock, tags, tac, email, draft } = req.body;
 
     // validation
-    // if(!draft){
+    if(!draft){
         if(!name.length){
             return res.json({'alert': 'enter product name'});
         } else if(shortDes.length > 100 || shortDes.length < 10){
@@ -206,7 +206,7 @@ app.post('/add-product', (req, res) => {
         } else if(!tac){
             return res.json({'alert': 'you must agree to our terms and conditions'});
         }
-    //}
+    }
 
     // add product
     let docName = `${name.toLowerCase()}-${Math.floor(Math.random() * 5000)}`;
