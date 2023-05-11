@@ -147,6 +147,11 @@ app.post('/login', (req, res) => {
     })
 })
 
+// // product page route
+// app.get("/product", (req, res) => {
+//     res.sendFile(path.join(staticPath, "product.html"));
+// })
+
 // seller route
 app.get('/seller', (req, res) => {
     res.sendFile(path.join(staticPath, "seller.html"));
