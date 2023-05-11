@@ -11,7 +11,6 @@ Generic small business Ecommerce Website to sell products online
 ## Stretch Goals
 - User reviews
 - A11Y
-- Think about site and db security
 - Optimization
 - Admin panel
   - Allow admins to edit products and prices
@@ -26,9 +25,10 @@ Generic small business Ecommerce Website to sell products online
 - product page structure
 - 404 page structure
 - search page structure
+- seller page/admin panel
 
 ## To Be Completed
-- home pages
+- home page
   - navbar functionality including search function
   - product cards should lead to product pages
   - collections should go to products in certain categories
@@ -38,15 +38,11 @@ Generic small business Ecommerce Website to sell products online
   - functional buttons (add to cart, add to wishlist)
   - better/more responsive css
 
-- products should be in db
-
 - user reviews
 
 - a11y
 
 - responsive design
-
-- admin panel
 
 ## Setbacks
 - I didn't properly configure my .gitignore file on my local environment and accidentally pushed my db key publicly on GitHub. Because of this, I had to delete my commit history and generate a new key.
