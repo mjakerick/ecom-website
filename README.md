@@ -42,6 +42,8 @@ Generic small business Ecommerce Website to sell products online
 
 - working search bar with search page
 
+- functioning product page
+
 - a11y
 
 - responsive design
