@@ -44,5 +44,7 @@ Generic small business Ecommerce Website to sell products online
 
 - responsive design
 
+- 404 page Homepage link isn't working
+
 ## Setbacks
 - I didn't properly configure my .gitignore file on my local environment and accidentally pushed my db key publicly on GitHub. Because of this, I had to delete my commit history and generate a new key.
